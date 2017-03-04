@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+    <!--
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+    
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="index.htm">indexController</prop>
+            </props>
+        </property>
+    </bean>
+    -->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+    <bean class="inet.controller.IndexController" name="/live.htm"/>
+    <bean class="inet.controller.IndexController" name="/index.htm"/>
+    <bean class="inet.controller.KQXSTHUController" name="/kqxs_thu.htm"/>
+    <bean class="inet.controller.KQXSController" name="/kqxs.htm"/>
+    <bean class="inet.controller.PhanTichLotoController" name="/phantichloto.htm"/>
+    <bean class="inet.controller.PhanTichLotoBTController" name="/phantichlotobt.htm"/>
+    <bean class="inet.controller.PhanTichLotoThuController" name="/phantichlototheothu.htm"/>
+    <bean class="inet.controller.PhanTichLoto2NhayController" name="/phantichloto2nhay.htm"/>
+    <bean class="inet.controller.CauTamGiacController" name="/cautamgiac.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/live.htm"/>
+<!--    duy them-->
+    <bean class="inet.controller.CauLoToCapSoController" name="/caulotocapso.htm"/>
+    <bean class="inet.controller.LiveMienTrungController" name="/live_mt.htm"/>
+    <bean class="inet.controller.LiveMienNamController" name="/live_mn.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/live_mien_trung.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/live_mien_nam.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/mobile/live.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/mobile/live_mien_trung.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/mobile/live_mien_nam.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/live_dau.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/live_duoi.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/mobile/live_dau.htm"/>
+    <bean class="inet.controller.BuildXSLiveController" name="/ajax/mobile/live_duoi.htm"/>
+    <bean class="inet.controller.KetQuaXoSoController" name="/xosocactinh.htm"/>
+    <bean class="inet.controller.LienHeController" name="/lienhe.htm"/>
+    <bean class="inet.controller.GioiThieuController" name="/gioithieu.htm"/>
+    <bean class="inet.controller.PageNotFoundController" name="/404.htm"/>
+    <bean class="inet.controller.PageNotFoundController" name="/mobile/404.htm"/>
+<!--    end duy them-->
+
+    <!--
+    The index controller.
+    
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+          
+    -->       
+
+</beans>

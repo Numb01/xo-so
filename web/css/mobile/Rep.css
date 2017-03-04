@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (min-width: 500px) {
+	.Centre_BANGKQ_table_col_2{
+	font-size:1.8em;
+	}
+	.Centre_BANGKQ_table_col_3{
+		font-size:1.5em;
+	}
+	.Centre_BANGKQ_table_col_4{
+		font-size:1.5em;
+	}
+	.DACBIET_TK_BANGDB_KQ p{
+		font-size:1.5em;
+	}
+}
+

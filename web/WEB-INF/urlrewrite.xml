@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN" "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+    <rule>
+        <from>/xsmb-xo-so-mien-bac\.html$</from>
+        <to>/live.htm</to>
+    </rule>
+    <rule>
+        <from>/xsmn-xo-so-mien-nam\.html$</from>
+        <to>/live_mn.htm</to>
+    </rule>
+    <rule>
+        <from>/xsmt-xo-so-mien-trung\.html$</from>
+        <to>/live_mt.htm</to>   
+    </rule>
+    <rule>
+        <from>/xsmb-ket-qua-xo-so-mien-bac-hom-nay\.html$</from>
+        <to>/index.htm</to>
+    </rule>
+    <rule>
+        <from>/xsmb-xo-so-mien-bac-ngay-([0-9-]+)\.html$</from>
+        <to>/kqxs.htm?d=$1</to>
+    </rule>
+    
+    <rule>
+        <from>/xsmt-xo-so-mien-trung-ngay-([0-9-]+)\.html$</from>
+        <to>/live_mt.htm?d=$1</to>
+    </rule>
+    <rule>
+        <from>/xsmn-xo-so-mien-nam-ngay-([0-9-]+)\.html$</from>
+        <to>/live_mn.htm?d=$1</to>
+    </rule>
+    <rule>
+        <from>/soi-cau-xo-so-mien-bac-xsmb\.html$</from>
+        <to>/phantichloto.htm</to>
+    </rule>
+    <rule>
+        <from>/soi-cau-bach-thu-xo-so-mien-bac-xsmb\.html$</from>
+        <to>/phantichlotobt.htm</to>
+    </rule>               
+    
+    <rule>
+        <from>/soi-cau-xo-so-mien-bac-theo-thu\.html$</from>
+        <to>/phantichlototheothu.htm</to>
+    </rule>
+    
+    <rule>
+        <from>/soi-cau-xo-so-mien-bac-theo-nhay\.html$</from>
+        <to>/phantichloto2nhay.htm</to>
+    </rule>
+    <rule>
+        <from>/soi-cau-xo-so-mien-bac-tam-giac\.html$</from>
+        <to>/cautamgiac.htm</to>
+    </rule>
+    
+    <rule>
+        <from>/404\.html$</from>
+        <to>/404.htm</to>
+    </rule>
+    <rule>
+        <from>/soi-cau-lo-to-cap-so-xo-so-mien-bac\.html$</from>
+        <to>/caulotocapso.htm</to>
+    </rule>
+    <rule>
+        <from>/lien-he\.html$</from>
+        <to>/lienhe.htm</to>
+    </rule>
+    <rule>
+        <from>/gioi-thieu\.html$</from>
+        <to>/gioithieu.htm</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)-xo-so-([a-z-]+)\.html$</from>
+        <to>/xosocactinh.htm?code=$1&amp;link=$2</to>
+    </rule>
+    <rule>
+        <from>/([a-z]+)-xo-so-([a-z-]+)-ngay-([0-9-]+)\.html$</from>
+        <to>/xosocactinh.htm?code=$1&amp;link=$2&amp;ngay=$3</to>
+    </rule>
+    <!--    redirect thu-->
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-2.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-2.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-3.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-3.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-4.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-4.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-5.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-5.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-6.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-6.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-thu-7.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-thu-7.html</to>
+    </rule>
+    <rule match-type="wildcard">
+        <from>/kqsxmb-chu-nhat.html</from>
+        <to type="permanent-redirect" last="true">/kqxsmb-chu-nhat.html</to>
+    </rule>
+    <!--    end redirect thu-->
+    <rule>
+        <from>/kqxsmb-thu-2.html</from>
+        <to>/kqxs_thu.htm?d=2</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-thu-3.html</from>
+        <to>/kqxs_thu.htm?d=3</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-thu-4.html</from>
+        <to>/kqxs_thu.htm?d=4</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-thu-5.html</from>
+        <to>/kqxs_thu.htm?d=5</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-thu-6.html</from>
+        <to>/kqxs_thu.htm?d=6</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-thu-7.html</from>
+        <to>/kqxs_thu.htm?d=7</to>
+    </rule>
+    <rule>
+        <from>/kqxsmb-chu-nhat.html</from>
+        <to>/kqxs_thu.htm?d=cn</to>
+    </rule>
+</urlrewrite>
+
